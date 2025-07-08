@@ -1,0 +1,45 @@
+---
+title: 'Assembling the Circuit'
+description: "Follow these steps to wire your robot's circuit."
+---
+
+
+### Wiring the Right Side
+
+For this section, you will need: the right motor, the right whisker switch (must be an SPDT switch with 3 pins), an LED, a buzzer, and a small resistor (220Ω or 330Ω is perfect).
+
+**1. Connect Power to the Switch**
+- Take your **Right Whisker Switch**. It has 3 pins: COM (Common), NC (Normally Closed), and NO (Normally Open).
+- Connect a wire from the positive power rail (**+**) to the **COMMON (COM)** pin of the switch.
+
+**2. Wire the Motor (Default ON)**
+- Connect the **NORMALLY CLOSED (NC)** pin of the switch to the positive terminal of the **Right Motor**.
+- Connect the other terminal of the motor to the ground rail (**-**).
+- **Result:** When the robot is powered on and the whisker is not touched, the motor will run.
+
+**3. Wire the Indicator (LED + Buzzer)**
+- Connect the **NORMALLY OPEN (NO)** pin of the switch to one leg of your **220Ω resistor**.
+- Connect the other leg of the resistor to the **longer leg** (anode) of your LED.
+    <Info>The resistor is very important! It protects your LED from burning out.</Info>
+- Connect the **shorter leg** (cathode) of the LED to the positive pin of the **Buzzer**.
+- Connect the negative pin of the **Buzzer** to the ground rail (**-**).
+- **Result:** When the whisker is pressed, the motor will stop and the LED and buzzer will turn on.
+
+### Wiring the Left Side
+
+Now, simply repeat the exact same 3 steps for the left side of the robot.
+- Use the **Left Whisker Switch**.
+- Use the **Left Motor**.
+- Use your second LED, buzzer, and resistor.
+
+The final circuit is a perfect mirror image of the first side.
+
+### Final Check
+- Before connecting the batteries, gently press each whisker. You should hear a small "click" from the switch.
+- Double-check that your LEDs are the right way around (the long leg should be connected to the resistor/switch).
+
+Once you've checked your wiring, you're ready to power it on!
+
+<Info>
+Building and testing one side completely before starting the second can make troubleshooting easier.
+</Info>

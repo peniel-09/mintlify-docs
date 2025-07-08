@@ -1,0 +1,36 @@
+---
+title: 'Understanding the Logic'
+description: "The simple and effective logic behind the whisker robot."
+---
+
+### Note
+Before wiring anything, it's essential to understand how this robot "thinks." We've designed a very simple and reliable system perfect for a first robot.
+
+### The Core Logic: The Pivot Turn
+
+The robot's goal is to move forward until one of its whiskers touches an object. When it does, it simply stops the motor on that side, causing it to pivot away from the obstacle.
+
+Imagine the robot is a kayak with two paddles:
+
+- **To Go Forward:** You paddle with both arms. (Both motors are **ON**).
+- **To Turn Right:** You stop paddling with your right arm and continue with your left. The kayak pivots right. (Right motor is **OFF**, Left motor is **ON**).
+
+This leads to a very simple set of rules:
+
+| Situation | Left Motor | Right Motor | Robot's Action |
+| :--- | :--- | :--- | :--- |
+| Clear Path | **ON** | **ON** | Moves Forward ➡️ |
+| Left Whisker Hit | **OFF** 🛑 | **ON** | Pivots Left ↪️ |
+| Right Whisker Hit | **ON** | **OFF** 🛑 | Pivots Right ↩️ |
+
+
+### Overall Principle Diagram
+
+This diagram shows how simple the information flow is. Each sensor directly controls its corresponding motor.
+
+```mermaid
+graph TD
+    subgraph "Simple Pivot Logic"
+        S1[Left Whisker Switch] --> M1(Left Motor);
+        S2[Right Whisker Switch] --> M2(Right Motor);
+    end

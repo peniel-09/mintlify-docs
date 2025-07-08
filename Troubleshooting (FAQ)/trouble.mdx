@@ -1,0 +1,22 @@
+---
+title: 'Troubleshooting & FAQ'
+description: "Having an issue? Check here for common problems and solutions."
+---
+
+# Troubleshooting & FAQ
+
+If your robot isn't behaving as expected, don't worry! Here are some common issues and how to fix them.
+
+### My robot doesn't move at all.
+- **Check the Power:** Are the batteries fresh? Is the power pack connected correctly to the breadboard's **+** and **-** rails?
+- **Check the Pull-Up Resistors:** Make sure your 10 kΩ resistors are connected from the positive rail (**+**) to the base of each transistor. Without them, the motors will never turn on.
+
+### A motor is always on and won't stop when I press the whisker.
+- **Check the Whisker Wiring:** The most likely cause is that the whisker switch is not correctly wired between the transistor's **BASE** and **GROUND (-)**. Make sure the switch creates a solid connection to ground when pressed.
+
+### A motor is always off.
+- **Check the Transistor:** Is the transistor inserted correctly? The pins (Emitter, Base, Collector) must be in the right holes. Check its datasheet.
+- **Is the Whisker Stuck?** Make sure the whisker isn't accidentally stuck in the "pressed" position, which would keep the motor off permanently.
+
+### The robot turns the wrong way when it hits an obstacle.
+- You have swapped the control signals. The whisker on the right should be connected to the circuit controlling the right motor. Check that your wires aren't crossed over from one side to the other.

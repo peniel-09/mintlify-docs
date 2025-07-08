@@ -1,71 +1,64 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Tekbot Robotics Workshop on Mustache Robot",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#25346e",
+    "light": "#25346e",
+    "dark": "#25346e"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
-    "tabs": [
+    "groups":[
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
+        "group": "Overview",
+        "pages": [
+          "Overview/introduction"
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+      "group": "Required equipment",
+        "pages": [
+          "Required equipment/required"
+        ]
+      },
+      {
+        "group": "Robot logic",
+        "pages": [
+          "Understanding Logic/logic"
+        ]
+      },
+      {
+        "group": "Step by step assembly",
+        "pages": [
+          "Step by Step Assembly/assembly"
+        ]
+      },
+      {
+        "group": "FAQ",
+        "pages": [
+          "Troubleshooting (FAQ)/trouble"
+        ]
+      },
+      {
+        "group": "To Go Further",
+        "pages": [
+          "To Go Further/further"
         ]
       }
+
     ],
     "global": {
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://tekbot-robotics-workshop.mintlify.app/",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Github",
+          "href": "https://github.com/peniel-09/mintlify-docs.git",
+          "icon": "github"
         },
         {
           "anchor": "Blog",
@@ -76,8 +69,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/Tek6.png",
+    "dark": "/logo/Tek6.svg"
   },
   "navbar": {
     "links": [
@@ -94,9 +87,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/peniel-09/tekbot-internship-docs",
+      "linkedin": "https://www.linkedin.com/in/p%C3%A9niel-ahouansou-43b1482a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     }
   }
 }
